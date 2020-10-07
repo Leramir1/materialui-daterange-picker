@@ -39,18 +39,18 @@ interface HeaderProps {
 }
 
 const MONTHS = [
-  'Jan',
-  'Feb',
-  'Mar',
-  'Apr',
-  'May',
-  'June',
-  'July',
-  'Aug',
-  'Sept',
-  'Oct',
-  'Nov',
-  'Dec',
+	"Jan",
+	"Fev",
+	"Mar",
+	"Abr",
+	"Mai",
+	"Jun",
+	"Jul",
+	"Ago",
+	"Set",
+	"Out",
+	"Nov",
+	"Dez"
 ];
 
 const generateYears = (relativeTo: Date, count: number) => {

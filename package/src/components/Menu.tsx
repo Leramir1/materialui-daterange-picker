@@ -9,6 +9,7 @@ import {
   Theme,
 } from '@material-ui/core';
 import { format, differenceInCalendarMonths } from 'date-fns';
+import localePtBr from "date-fns/locale/pt";
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import Month from './Month';
 import DefinedRanges from './DefinedRanges';
@@ -87,7 +88,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
           <Grid container className={classes.header} alignItems="center">
             <Grid item className={classes.headerItem}>
               <Typography variant="subtitle1">
-                {startDate ? format(startDate, 'MMMM DD, YYYY') : 'Start Date'}
+              {startDate ? format(startDate, "MMMM DD, YYYY",{ locale: localePtBr }) : "Data início"}
               </Typography>
             </Grid>
             <Grid item className={classes.headerItem}>
@@ -95,7 +96,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
             </Grid>
             <Grid item className={classes.headerItem}>
               <Typography variant="subtitle1">
-                {endDate ? format(endDate, 'MMMM DD, YYYY') : 'End Date'}
+              {endDate ? format(endDate, "MMMM DD, YYYY",{ locale: localePtBr }) : "Data fim"}
               </Typography>
             </Grid>
           </Grid>
