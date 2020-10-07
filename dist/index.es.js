@@ -6264,7 +6264,7 @@ var NavigationAction;
     NavigationAction[NavigationAction["Next"] = 1] = "Next";
 })(NavigationAction || (NavigationAction = {}));
 
-var WEEK_DAYS = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+var WEEK_DAYS = ['do', '2ª', '3ª', '4ª', '5ª', '6ª', 'sa'];
 var useStyles$2 = makeStyles(function () { return ({
     root: {
         width: 290,
@@ -6351,11 +6351,11 @@ var Menu = function (props) {
             React__default.createElement(Grid, null,
                 React__default.createElement(Grid, { container: true, className: classes.header, alignItems: "center" },
                     React__default.createElement(Grid, { item: true, className: classes.headerItem },
-                        React__default.createElement(Typography, { variant: "subtitle1" }, startDate ? dateFns_50(startDate, "MMMM DD, YYYY", { locale: pt }) : "Data início")),
+                        React__default.createElement(Typography, { variant: "subtitle1" }, startDate ? dateFns_50(startDate, "DD-MMMM-YYYY", { locale: pt }) : "Data início")),
                     React__default.createElement(Grid, { item: true, className: classes.headerItem },
                         React__default.createElement(ArrowRightAlt$1, { color: "action" })),
                     React__default.createElement(Grid, { item: true, className: classes.headerItem },
-                        React__default.createElement(Typography, { variant: "subtitle1" }, endDate ? dateFns_50(endDate, "MMMM DD, YYYY", { locale: pt }) : "Data fim"))),
+                        React__default.createElement(Typography, { variant: "subtitle1" }, endDate ? dateFns_50(endDate, "DD-MMMM-YYYY", { locale: pt }) : "Data fim"))),
                 React__default.createElement(Divider, null),
                 React__default.createElement(Grid, { container: true, direction: "row", justify: "center", wrap: "nowrap" },
                     React__default.createElement(Month, __assign({}, commonProps, { value: firstMonth, setValue: setFirstMonth, navState: [true, canNavigateCloser], marker: MARKERS.FIRST_MONTH })),
