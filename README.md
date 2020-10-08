@@ -10,10 +10,6 @@ A react date range picker implementation using @material-ui and updated to lang 
 
 ![Screenshot](/screenshot.png?raw=true "Screenshot")
 
-## Live Demo
-
-Check out the project running [here](https://codesandbox.io/s/materialui-daterange-picker-2p3f1?file=/src/App.js)!
-
 ## Usage
 
 ```bash
